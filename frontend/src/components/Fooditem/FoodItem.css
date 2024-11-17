@@ -1,0 +1,129 @@
+/* src/components/FoodItem/FoodItem.css */
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .food-item-img-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .food-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .food-item:hover .food-item-image {
+    transform: scale(1.08);
+  }
+  
+  .food-item-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .food-item-name-rating p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .food-item-name-rating img {
+    width: 85px;
+    height: auto;
+  }
+  
+  .food-item-desc {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 18px;
+    line-height: 1.4;
+  }
+  
+  .food-item-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #27ae60;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .add {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .add:hover {
+    background-color: #27ae60;
+  }
+  
+  .food-item-counter {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 6px 10px;
+    border-radius: 50px;
+    color: #fff;
+  }
+  
+  .food-item-counter img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .food-item-counter p {
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .food-item-counter img:hover {
+    transform: scale(1.1);
+  }
+  

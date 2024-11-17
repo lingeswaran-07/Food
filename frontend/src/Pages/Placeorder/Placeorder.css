@@ -1,0 +1,114 @@
+/* Overall container */
+.place-order {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .place-order-left, .place-order-right {
+    flex: 1;
+    min-width: 280px; /* Ensure components don't shrink too small on narrow screens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Multi-field containers */
+  .multi-fields {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .multi-fields input {
+    flex: 1;
+  }
+  
+  /* Input fields */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Cart totals styling */
+  .cart-total {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .cart-total h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .place-order {
+      flex-direction: column;
+    }
+  
+    .place-order-left, .place-order-right {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    input, button {
+      font-size: 0.9rem;
+    }
+  
+    .cart-total h2 {
+      font-size: 1.2rem;
+    }
+  
+    .cart-total-details {
+      font-size: 1rem;
+    }
+  }
+  
